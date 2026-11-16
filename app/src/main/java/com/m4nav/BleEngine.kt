@@ -24,7 +24,7 @@ import java.util.UUID
  * 连 M4 手环并写 0x2d01。
  *
  * 连接策略（和 Windows 端实测结论一致）：
- *   手环一被连上就停广播，所以必须“按服务 UUID 18d0 过滤扫描”拿到它，
+ *   手环一被连上就停广播，所以必须"按服务 UUID 18d0 过滤扫描"拿到它，
  *   扫到之后立刻 connectGatt，再取 2d01 写。
  */
 class BleEngine(private val ctx: Context, private val onState: (String) -> Unit) {
@@ -139,7 +139,7 @@ class BleEngine(private val ctx: Context, private val onState: (String) -> Unit)
                 return
             }
             writeChar = w
-            onState("就绲：可推送")
+            onState("就绪：可推送")
         }
     }
 

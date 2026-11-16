@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicLong
 
 /**
  * 抓高德通知：把 title 与 text 拼起来交给 NavService。
- * 需要用户在系统设置里授予“通知使用权”。
+ * 需要用户在系统设置里授予"通知使用权"。
  */
 class NotifListener : NotificationListenerService() {
 

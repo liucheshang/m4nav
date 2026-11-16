@@ -10,7 +10,7 @@ import kotlin.math.sqrt
 import kotlin.math.PI
 
 /**
- * 通知给锚点（"3 0 0 米后右转"），定位心跳把距离递减出来。
+ * 通知给锚点（"300米后右转"），定位心跳把距离递减出来。
  * 高德只在 500/300/100/50 这类档位刷新，靠这个类补出平滑倒计时。
  */
 class GeoCountdown(private val step: Double = 50.0) {
